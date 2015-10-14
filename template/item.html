@@ -1,9 +1,10 @@
 <div ng-controller="ItemController">
 	<h1>Pizzáink</h1>
-	<div ng-repeat="pizza in pizzas">
+	<div ng-repeat="pizza in pizzaItem">
 		<h2>{{pizza.name}}</h2>
-		<h4>Méret / Ár</h3>
+		<h4>Méret / Ár</h4>
 		<h3></h3>
 		<p>{{pizza.ingredients}}</p>
+			<img src="{{pizza.imageSource}}" alt="{{piiza.name}} kép" />
 	</div>
 </div>

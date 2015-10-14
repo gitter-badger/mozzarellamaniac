@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="MozzarellaManiac">
+    <meta name="keywords" content="MozzarellaManiac,pizza,rendelés">
+    <meta name="author" content="Árpád Juhász,Bálint Bozóki">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/javascript/angular/angular.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js">   </script>
+    <script type="text/javascript" src="/script.js"></script>
+
+    <title>MozzarellaManiac</title>
+</head>
+    <nav>
+        <ul>
+            <li><a href="#/">Pizzáink</a></li>
+            <li><a href="#/order">Rendelés</a></li>
+        </ul>
+    </nav>
+    <body ng-app="MozzarellaManiac">
+        <div ng-view>
+            <!-- Angular view -->
+        </div>
+    </body>
+</html>
