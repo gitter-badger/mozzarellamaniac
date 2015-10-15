@@ -1,9 +1,12 @@
-<div ng-controller="PizzaListController">
+<div ng-controller="ItemsController">
 	<h1>Pizzáink</h1>
-	<div ng-repeat="pizza in pizzas">
-		<h2>{{pizza.name}}</h2>
-		<h4>Méret / Ár</h3>
-		<h3></h3>
-		<p>{{pizza.ingredients}}</p>
+	    <div ng-repeat="pizza in pizzaItems" class="pizzaContainer" >
+		    <div class="pizzaDescription">
+                <h2>{{pizza.name}}</h2>
+		        <p>{{pizza.ingredients}}</p>
+            </div>
+            <div class="pizzaImage">
+                <img class="smallImage" alt="{{pizza.name}} kép" src="{{pizza.image}}" />
+            </div>
 		</div>
 </div>

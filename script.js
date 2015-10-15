@@ -10,21 +10,43 @@ app.config(function($routeProvider) {
 });
 
 app.controller('ItemController', function($scope, $http, $routeParams) {
-    $scope.login = function() {
+    $scope.pizzaItem = [{
+            pizza : "Sonkás",
+            imageSource : "image/pizza.jpg"},
+        {
+            pizza : "Sonkás",
+            imageSource : "image/pizza.jpg"},
+        {
+            pizza : "Sonkás",
+            imageSource : "image/pizza.jpg"}];//data;
         $http.get('/api/item?id' + $routeParams.id, $scope.credentials).success(
             function(data, status, headers, config) {
+                //$scope.pizzaItem = data;
             }).error(function (data, status, headers, config) {
-
+                $scope.itemError = {
+                    error : "Hiba történt a kapcsolódás során. Próbálja újra később."
+                };
             });
-    };
 
 });
 
 app.controller('ItemsController', function($scope, $http) {
+    $scope.pizzaItems = [{
+        name : "Sonkás",
+        ingredients : "pizzaszósz, sonka, sajt",
+        image : "/image/pizza.jpg"},
+        {
+            name : "Sonkás",
+            ingredients : "pizzaszósz, sonka, sajt",
+            image : "/image/pizza.jpg"},
+        {
+            name : "Sonkás",
+            ingredients : "pizzaszósz, sonka, sajt",
+            image : "/image/pizza.jpg"}];
     $http.get('/api/items').success(function(data, status, headers, config) {
-        $scope.pizzaItem = data;
+        $scope.pizzaItems = data;
     }).error(function(data, status, headers, config) {
-        $scope.grade = {"error":"Hiba történt a kapcsolódás során. Próbálja újra később."};
+        $scope.itemsError = { error : "Hiba történt a kapcsolódás során. Próbálja újra később." };
     });
 });
 
@@ -32,7 +54,9 @@ app.controller('OrderController', function($scope, $http) {
     $http.get('/api/order').success(function(data, status, headers, config) {
         $scope.pizzaOrder = data;
         }).error(function(data, status, headers, config) {
-            $scope.personal = {"error":"Hiba történt a kapcsolódás során. Próbálja újra később."};
+            $scope.orderError = {
+                error : "Hiba történt a kapcsolódás során. Próbálja újra később."
+            };
     });
 
 });
