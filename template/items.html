@@ -3,10 +3,11 @@
 	    <div ng-repeat="pizza in pizzaItems" class="pizzaContainer" >
 		    <div class="pizzaDescription">
                 <h2>{{pizza.name}}</h2>
-		        <p>{{pizza.ingredients}}</p>
+		        <h3>{{pizza.price}}</h3>
+                <a href="#/item/{{pizza.id}}">Részletes információ a pizzáról</a>
             </div>
             <div class="pizzaImage">
-                <img class="smallImage" alt="{{pizza.name}} kép" src="{{pizza.image}}" />
+                <img class="smallImage" alt="{{pizza.image}} kép" src="{{pizza.image}}" />
             </div>
 		</div>
 </div>

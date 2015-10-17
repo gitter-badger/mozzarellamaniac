@@ -2,7 +2,7 @@ var app = angular.module('MozzarellaManiac', [ 'ngRoute' ]);
 app.config(function($routeProvider) {
     $routeProvider.when('/', {
         templateUrl : '/template/items.html',
-    }).when('/items/:id', {
+    }).when('/item/:id', {
         templateUrl: '/template/item.html',
     }).when('/order', {
         templateUrl: '/template/order.html',
@@ -10,18 +10,16 @@ app.config(function($routeProvider) {
 });
 
 app.controller('ItemController', function($scope, $http, $routeParams) {
-    $scope.pizzaItem = [{
-            pizza : "Sonkás",
-            imageSource : "image/pizza.jpg"},
-        {
-            pizza : "Sonkás",
-            imageSource : "image/pizza.jpg"},
-        {
-            pizza : "Sonkás",
-            imageSource : "image/pizza.jpg"}];//data;
-        $http.get('/api/item?id' + $routeParams.id, $scope.credentials).success(
+    $scope.pizzaItem = {
+        id : 1,
+        name : "Sonkás",
+        price : 900,
+        topping_name : "paradicsom",
+        image : "image/pizza.jpg"};
+        $http.get('/api/item?id=' + $routeParams.id).success(
             function(data, status, headers, config) {
                 //$scope.pizzaItem = data;
+                //data;
             }).error(function (data, status, headers, config) {
                 $scope.itemError = {
                     error : "Hiba történt a kapcsolódás során. Próbálja újra később."
@@ -32,16 +30,22 @@ app.controller('ItemController', function($scope, $http, $routeParams) {
 
 app.controller('ItemsController', function($scope, $http) {
     $scope.pizzaItems = [{
+        id : 3,
         name : "Sonkás",
-        ingredients : "pizzaszósz, sonka, sajt",
+        price : 900,
+        topping_name : "pizzaszósz, sonka, sajt",
         image : "/image/pizza.jpg"},
         {
+            id : 1,
             name : "Sonkás",
-            ingredients : "pizzaszósz, sonka, sajt",
+            price : 900,
+            topping_name : "pizzaszósz, sonka, sajt",
             image : "/image/pizza.jpg"},
         {
+            id : 2,
             name : "Sonkás",
-            ingredients : "pizzaszósz, sonka, sajt",
+            price : 900,
+            topping_name : "pizzaszósz, sonka, sajt",
             image : "/image/pizza.jpg"}];
     $http.get('/api/items').success(function(data, status, headers, config) {
         $scope.pizzaItems = data;
