@@ -1,5 +1,4 @@
 div {
-    //border: 1px solid black;
     display: inline-block;
 }
 .smallImage {
@@ -7,7 +6,6 @@ div {
 }
 .pizzaContainer {
     width: 1080px;
-    border: 1px solid black;
     margin: auto;
 }
 .pizzaDescription {
