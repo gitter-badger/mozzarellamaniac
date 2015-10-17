@@ -1,18 +1,53 @@
-div {
-    display: inline-block;
+body {
+    font-family: arial;
 }
-.smallImage {
-    width: 360px;
-}
-.pizzaContainer {
+nav {
+    margin: 24px auto;
+    text-align: center;
     width: 1080px;
-    margin: auto;
+    height: 72px;
+    display: block;
+    background-color: royalblue;
 }
-.pizzaDescription {
-    width: 720px;
+nav a:link, nav a:visited {
+    text-align: center;
+    display: inline-block;
+    margin: 12px 24px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover {
+    text-shadow: 10px 5px 5px #000000;
+}
+h1 {
+    text-align: center;
+}
+#pizzaContainer {
+    width: 1080px;
+    margin: 24px auto 24px auto;
+}
+form {
+    width: 1080px;
+}
+label {
+    width: 500px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 24px;
+}
+input {
+    width: 200px;
+    display: inline-block;
+    margin-top: 24px;
+}
+.pizzaItems h3, .pizzaItems h2, .pizzaItems a {
+    display: inline-block;
     float: left;
+    width: 720px;
 }
-.pizzaImage {
+.pizzaItems img {
     width: 360px;
-    float: right;
 }

@@ -1,6 +1,7 @@
 <div ng-controller="ItemController">
 	<h1>Részletes információ a pizzáról</h1>
-	<div class="pizzaDescription">
+	<div>
+    <div class="pizzaDescription">
 			<h2>{{pizzaItem.name}}</h2>
 			<h3>{{pizzaItem.price}} .- HUF</h3>
             <p>Összetevők: {{pizzaItem.topping_name}}</p>
@@ -24,4 +25,5 @@
 		<div class="pizzaImage">
 			<img class="smallImage" alt="{{pizza.image}} kép" src="{{pizzaItem.image}}" />
 		</div>
+    <div>
 </div>

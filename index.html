@@ -15,14 +15,12 @@
 
     <title>MozzarellaManiac</title>
 </head>
-    <nav class="navbar navbar-default">
-        <ul>
-            <li><a class="btn info" href="#/">Pizzáink</a></li>
-            <li><a href="#/order">Rendelés</a></li>
-        </ul>
+<body ng-app="MozzarellaManiac">
+    <nav>
+        <a class="btn info" href="#/">Pizzáink</a>
+        <a href="#/order">Rendelés</a>
     </nav>
-    <body ng-app="MozzarellaManiac" class="pizzaContainer">
-        <div ng-view>
+        <div id="pizzaContainer" ng-view>
             <!-- Angular view -->
         </div>
     </body>
