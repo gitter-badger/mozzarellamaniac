@@ -10,16 +10,9 @@ app.config(function($routeProvider) {
 });
 
 app.controller('ItemController', function($scope, $http, $routeParams) {
-    $scope.pizzaItem = {
-        id : 1,
-        name : "Sonkás",
-        price : 900,
-        topping_name : "paradicsom",
-        image : "image/pizza.jpg"};
-        $http.get('/api/item?id=' + $routeParams.id).success(
+     $http.get('/api/item.php?id=' + $routeParams.id).success(
             function(data, status, headers, config) {
-                //$scope.pizzaItem = data;
-                //data;
+                $scope.pizzaItem = data;
             }).error(function (data, status, headers, config) {
                 $scope.itemError = {
                     error : "Hiba történt a kapcsolódás során. Próbálja újra később."
@@ -29,25 +22,7 @@ app.controller('ItemController', function($scope, $http, $routeParams) {
 });
 
 app.controller('ItemsController', function($scope, $http) {
-    $scope.pizzaItems = [{
-        id : 3,
-        name : "Sonkás",
-        price : 900,
-        topping_name : "pizzaszósz, sonka, sajt",
-        image : "/image/pizza.jpg"},
-        {
-            id : 1,
-            name : "Sonkás",
-            price : 900,
-            topping_name : "pizzaszósz, sonka, sajt",
-            image : "/image/pizza.jpg"},
-        {
-            id : 2,
-            name : "Sonkás",
-            price : 900,
-            topping_name : "pizzaszósz, sonka, sajt",
-            image : "/image/pizza.jpg"}];
-    $http.get('/api/items').success(function(data, status, headers, config) {
+    $http.get('/api/items.php').success(function(data, status, headers, config) {
         $scope.pizzaItems = data;
     }).error(function(data, status, headers, config) {
         $scope.itemsError = { error : "Hiba történt a kapcsolódás során. Próbálja újra később." };

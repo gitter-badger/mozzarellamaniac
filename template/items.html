@@ -3,7 +3,7 @@
     <div ng-repeat="pizza in pizzaItems" class="pizzaItems">
             <h2>{{pizza.name}}</h2>
             <h3>Ár: {{pizza.price}} HUF</h3>
-            <a href="#/item/{{pizza.id}}">Részletes információ a pizzáról</a>
-            <img alt="{{pizza.name}}" src="{{pizza.image}}" />
+            <a href="#/item/{{pizza.pizza_id}}">Részletes információ a pizzáról</a>
+            <img alt="{{pizza.name}}" src="/image/{{pizza.image}}.jpg" />
     </div>
 </div>

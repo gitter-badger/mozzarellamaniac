@@ -1,26 +1,27 @@
 <?php
 	function GetAllPizza(){
 		//Establishing Mysql connection
-		$conn = new PDO("mysql:host=localhost;dbname=pizzeria", 'root', 'godfather');
+
+		header("Content-type: application/json; charset=utf-8");
+		$conn = new PDO("mysql:host=localhost;dbname=pizzeria", 'root', 'root');
+
 		
-		$sql = "SELECT pizza_id, name, price FROM pizza";
+		$sql = "SELECT pizza_id, name, price, image FROM pizza";
 				
 		$query = $conn->query($sql);
-		
 		while($res = $query->fetch(PDO::FETCH_ASSOC)) {
 			$rows[] = $res;
 		}
-		
-		echo json_encode($rows) . "<br /><br />";
+		echo json_encode($rows) . "";
 	}
 	
 	function GetPizzaById($id=null){
 		$id = $_GET['id'];
 		if(!$id){
-			echo "<script type='text/javascript'>alert('Nincs megadva pizza azonosÌtÛsz·m!');</script>";
+			//echo "<script type='text/javascript'>alert('Nincs megadva pizza azonos√≠t√≥sz√°m!');</script>";
 		}else{
 			//Establishing Mysql connection
-			$conn = new PDO("mysql:host=localhost;dbname=pizzeria", 'root', 'godfather');
+			$conn = new PDO("mysql:host=localhost;dbname=pizzeria", 'root', 'root');
 			
 			$sql = "SELECT pizza_id, name, price FROM pizza WHERE pizza_id = $id";
 			
@@ -36,10 +37,7 @@
 				$rows[] = $res;
 			}
 			$rows[] = $row;
-			
 			echo json_encode($rows);
 		}
 	}
-	GetAllPizza();
-	GetPizzaById();
 ?>
