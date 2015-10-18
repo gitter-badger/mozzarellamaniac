@@ -10,7 +10,7 @@
 		while($res = $query->fetch(PDO::FETCH_ASSOC)) {
 			$rows[] = $res;
 		}
-		
+		header("Content-type: application/json");
 		echo json_encode($rows) . "<br /><br />";
 	}
 	
@@ -36,7 +36,7 @@
 				$rows[] = $res;
 			}
 			$rows[] = $row;
-			
+			header("Content-type: application/json");
 			echo json_encode($rows);
 		}
 	}
