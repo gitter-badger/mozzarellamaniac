@@ -3,15 +3,15 @@
 		//Establishing Mysql connection
 		$conn = new PDO("mysql:host=localhost;dbname=pizzeria", 'root', 'godfather');
 		
-		$sql = "SELECT pizza_id, name, price FROM pizza";
+		$sql = "SELECT pizza_id, name, price, image FROM pizza";
 				
 		$query = $conn->query($sql);
 		
 		while($res = $query->fetch(PDO::FETCH_ASSOC)) {
 			$rows[] = $res;
 		}
-		header("Content-type: application/json");
-		echo json_encode($rows) . "<br /><br />";
+		
+		echo json_encode($rows);
 	}
 	
 	function GetPizzaById($id=null){
@@ -22,24 +22,27 @@
 			//Establishing Mysql connection
 			$conn = new PDO("mysql:host=localhost;dbname=pizzeria", 'root', 'godfather');
 			
-			$sql = "SELECT pizza_id, name, price FROM pizza WHERE pizza_id = $id";
+			$sql = "SELECT pizza_id, name, price, image FROM pizza WHERE pizza_id = $id";
 			
 			$sql2 = "SELECT name topping FROM topping";
 			
+			$row = "";
+			
 			$query = $conn->query($sql);
+			
 			$query2 = $conn->query($sql2);
-			while($res = $query2->fetch(PDO::FETCH_ASSOC)) {
-					$row[] = $res;
+			
+			while($res = $query2->fetch()) {
+					$row = $row . implode(" ",$res);
 			}
-			print_r($row);
+
 			while($res = $query->fetch(PDO::FETCH_ASSOC)) {
 				$rows[] = $res;
 			}
 			$rows[] = $row;
-			header("Content-type: application/json");
+			
 			echo json_encode($rows);
 		}
 	}
-	GetAllPizza();
-	GetPizzaById();
+
 ?>
