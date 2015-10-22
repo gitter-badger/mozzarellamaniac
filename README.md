@@ -10,6 +10,6 @@ Rendszerfejlesztés projekt - Pizza
 
 # JSON minták
 /api/items:<br />
-[{pizza_id:0,"name":"name","price":0,"image":"image"},{...}]<br />
+[{pizza_id:0,"name":"pizza_name","price":0,"image":"image"},{...}]<br />
 /api/item?id=0<br />
-{pizza_id:0,"name":"name","price":0,"topping_name":"toppings","image":"image"}
+{pizza_id:0,"pizza_name":"name","price":0,"topping_sub":[{"topping_name":"topping"}],"image":"image"}

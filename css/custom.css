@@ -1,6 +1,10 @@
 body {
     font-family: arial;
 }
+td, th {
+    text-align: center;
+    width: 100px;
+}
 nav {
     margin: 24px auto;
     text-align: center;
@@ -28,6 +32,7 @@ h1 {
     width: 1080px;
     margin: 24px auto 24px auto;
 }
+
 form {
     width: 1080px;
 }
@@ -43,11 +48,15 @@ input {
     display: inline-block;
     margin-top: 24px;
 }
+.pizzaItems {
+    width: 980px;
+    margin: 24px auto;
+}
 .pizzaItems h3, .pizzaItems h2, .pizzaItems a {
     display: inline-block;
     float: left;
     width: 720px;
 }
 .pizzaItems img {
-    width: 360px;
+    height: 180px;
 }

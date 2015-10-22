@@ -8,8 +8,10 @@ app.config(function($routeProvider) {
         templateUrl: '/template/order.html',
     }).when('/login', {
         templateUrl: '/template/login.html',
-    }).when('/modify', {
-        templateUrl: '/template/modify.html',
+    }).when('/list', {
+        templateUrl: '/template/list.html',
+    }).when('/contact', {
+        templateUrl: '/template/contact.html',
     });
 });
 
@@ -46,22 +48,40 @@ app.controller('OrderController', function($scope, $http) {
 
 // Admin page
 app.controller('LoginController', function($scope, $http, $location) {
-    $scope.login = function() {
-        $scope.credentials = {
-            loginname : $scope.loginname,
-            password : $scope.password
+    $http.get('/api/logincheck.php').success(function(data, status, headers, config) {
+        $scope.loginCheck = data;
+        if ($scope.loginCheck.valid == 'true') {
+            $location.path("/list");
+        }
+    }).error(function(data, status, headers, config) {
+
+    });
+
+        $scope.login = function () {
+            $scope.credentials = {
+                loginname: $scope.loginname,
+                password: $scope.password
+            };
+            $http.post('/api/login.php', $scope.credentials).success(
+                function (data, status, headers, config) {
+                    $location.path("/list");
+                }).error(function (data, status, headers, config) {
+                    $location.path("/login");
+                });
         };
-        $http.post('/api/login.php', $scope.credentials).success(
-            function(data, status, headers, config) {
-                $location.path( "/modify" );
-            }).error(function (data, status, headers, config) {
-                $location.path( "/login" );
-            });
-    };
+
 });
 
-app.controller('ModifyController', function($scope, $http) {
-    $http.get('/api/modify.php').success(function(data, status, headers, config) {
+app.controller('ListController', function($scope, $http, $location) {
+    $http.get('/api/logincheck.php').success(function(data, status, headers, config) {
+        $scope.loginCheck = data;
+        if ($scope.loginCheck.valid == 'false') {
+            $location.path("/login");
+        }
+    }).error(function(data, status, headers, config) {
+
+    });
+    $http.get('/api/list.php').success(function(data, status, headers, config) {
         $scope.pizzaItems = data;
     }).error(function(data, status, headers, config) {
         $scope.itemsError = { error : "Hiba történt a kapcsolódás során. Próbálja újra később." };

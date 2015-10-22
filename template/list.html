@@ -1,0 +1,21 @@
+<div ng-controller="ListController">
+    <h1>Pizzáink</h1>
+    <div class="pizzaItems">
+        <table>
+            <tr>
+                <th>Megnevezés</th>
+                <th>Ár (Ft)</th>
+                <th>Összetevők</th>
+                <th>Kép</th>
+                <th>Lehetőség</th>
+            </tr>
+            <tr ng-repeat="pizza in pizzaItems">
+                <td>{{pizza.pizza_name}}</td>
+                <td>{{pizza.price}}</td>
+                <td><span ng-repeat="topping in pizza.topping_sub">{{topping.topping_name}}</span></td>
+                <td>/image/{{pizza.image}}.jpg</td>
+                <td><a href="#/alter/{{pizza.pizza_id}}">Módosítás</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
