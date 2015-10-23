@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaac0f2c-180f-4a7b-8c5d-0862447a7399" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/logincheck.php" />
-      <change type="DELETED" beforePath="D:\Arpi\Documents\GitHub\mozarellamaniac\template\modify.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/order.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/summary.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.php" afterPath="$PROJECT_DIR$/api/api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/item.html" afterPath="$PROJECT_DIR$/template/item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/items.html" afterPath="$PROJECT_DIR$/template/items.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/items.php" afterPath="$PROJECT_DIR$/api/items.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/login.php" afterPath="$PROJECT_DIR$/api/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/order.html" afterPath="$PROJECT_DIR$/template/order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Arpi\Documents\GitHub\mozarellamaniac\api\modify.php" afterPath="$PROJECT_DIR$/api/list.php" />
     </list>
     <ignored path="mozarellamaniac.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,82 +40,28 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state vertical-scroll-proportion="-22.884615">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
-                <marker date="1445506881642" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
-                <marker date="1445506881642" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
-                <marker date="1445506881642" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
-                <marker date="1445506881642" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
+                <marker date="1445594404589" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
+                <marker date="1445594404589" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
+                <marker date="1445594404589" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
+                <marker date="1445594404589" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
+                <marker date="1445594404589" expanded="true" signature="1775:1805" placeholder="SELECT price..pizza..." />
+                <marker date="1445594404589" expanded="true" signature="1775:1814" placeholder="SELECT price..pizza..." />
+                <marker date="1445594404589" expanded="true" signature="1775:1848" placeholder="SELECT price..pizza..." />
+                <marker date="1445594404589" expanded="true" signature="1775:1849" placeholder="SELECT price..pizza..." />
+                <marker date="1445594404589" expanded="true" signature="1775:1875" placeholder="SELECT price..pizza..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logincheck.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/logincheck.php">
+      <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26741573">
-              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/item.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.30459127">
+              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -136,11 +77,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state vertical-scroll-proportion="-11.769231">
+              <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -162,25 +113,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/template/order.html" />
-        <option value="$PROJECT_DIR$/api/item.php" />
         <option value="$PROJECT_DIR$/template/admin.html" />
         <option value="$PROJECT_DIR$/template/login.html" />
         <option value="$PROJECT_DIR$/api/modify.php" />
-        <option value="$PROJECT_DIR$/api/logincheck.php" />
-        <option value="$PROJECT_DIR$/api/items.php" />
-        <option value="$PROJECT_DIR$/api/login.php" />
         <option value="$PROJECT_DIR$/template/modify.html" />
         <option value="$PROJECT_DIR$/api/list.php" />
         <option value="$PROJECT_DIR$/template/list.html" />
-        <option value="$PROJECT_DIR$/api/api.php" />
-        <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/template/contact.html" />
-        <option value="$PROJECT_DIR$/template/item.html" />
         <option value="$PROJECT_DIR$/template/items.html" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/api/item.php" />
+        <option value="$PROJECT_DIR$/api/logincheck.php" />
+        <option value="$PROJECT_DIR$/api/items.php" />
+        <option value="$PROJECT_DIR$/api/api.php" />
+        <option value="$PROJECT_DIR$/api/summary.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/template/item.html" />
+        <option value="$PROJECT_DIR$/api/login.php" />
+        <option value="$PROJECT_DIR$/api/order.php" />
+        <option value="$PROJECT_DIR$/script.js" />
+        <option value="$PROJECT_DIR$/template/order.html" />
       </list>
     </option>
   </component>
@@ -200,6 +153,25 @@
     <option name="y" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>LossyEncoding</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -295,6 +267,8 @@
     <property name="FullScreen" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -381,6 +355,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -412,10 +387,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1445506881642" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
+            <marker date="1445594404589" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1805" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1814" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1848" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1849" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1875" placeholder="SELECT price..pizza..." />
           </folding>
         </state>
       </provider>
@@ -491,10 +471,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1445506881642" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
+            <marker date="1445594404589" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1805" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1814" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1848" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1849" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1875" placeholder="SELECT price..pizza..." />
           </folding>
         </state>
       </provider>
@@ -503,6 +488,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -632,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -646,17 +625,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/login.php">
+    <entry file="file://$PROJECT_DIR$/template/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019036954">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.206897">
+          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03807391">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/logincheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07614782">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/summary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05711086">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,26 +683,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03807391">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <marker date="1445506881642" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
-            <marker date="1445506881642" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47592387">
-          <caret line="25" column="0" selection-start-line="3" selection-start-column="8" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3807391">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07614782">
+          <caret line="4" column="83" selection-start-line="4" selection-start-column="83" selection-end-line="4" selection-end-column="83" />
+          <folding>
+            <marker date="1445604120416" expanded="true" signature="-1:-1" placeholder="SELECT passw..account..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4568869">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -692,30 +733,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30459127">
           <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/logincheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
+    <entry file="file://$PROJECT_DIR$/api/order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.64725643">
+          <caret line="34" column="197" selection-start-line="34" selection-start-column="197" selection-end-line="34" selection-end-column="197" />
+          <folding>
+            <marker date="1445632889720" expanded="true" signature="-1:-1" placeholder="SELECT price..pizza..." />
+            <marker date="1445632889720" expanded="true" signature="-1:-1" placeholder="SELECT price..pizza..." />
+            <marker date="1445632889720" expanded="true" signature="-1:-1" placeholder="SELECT price..pizza..." />
+            <marker date="1445632889720" expanded="true" signature="-1:-1" placeholder="SELECT pizza..pizza..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/api/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="-22.884615">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <marker date="1445594404589" expanded="true" signature="202:254" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="703:755" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="703:777" placeholder="SELECT pizza..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="933:1049" placeholder="SELECT toppi..topping..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1805" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1814" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1848" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1849" placeholder="SELECT price..pizza..." />
+            <marker date="1445594404589" expanded="true" signature="1775:1875" placeholder="SELECT price..pizza..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -727,45 +776,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/contact.html">
+    <entry file="file://$PROJECT_DIR$/template/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.30459127">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26741573">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
       </provider>
     </entry>
   </component>

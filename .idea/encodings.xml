@@ -2,8 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/api/api.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/item.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/items.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/list.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/login.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/logincheck.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/custom.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/script.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -34,4 +34,14 @@ function GetAllPizza(){
 
         }
     }
+
+    function OrderAdd() {
+        session_start();
+        $_SESSION[$_GET["pizza_id"]] = $_GET["piece"];
+        $connection = mysqli_connect("localhost","root","root","pizzeria");
+        $sqlPrice = "SELECT price FROM pizza WHERE pizza_id=".$_GET["id"] . " AND pizza_name='" . $_GET["pizza_name"]. "' ";
+        $resultPrice = $connection->query($sqlPrice);
+        $rowPrice = mysqli_fetch_assoc($resultPrice);
+        $_SESSION["summaryPrice"] += $_GET["piece"] * $rowPrice["price"];
+    }
 ?>

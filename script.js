@@ -15,8 +15,9 @@ app.config(function($routeProvider) {
     });
 });
 
-app.controller('ItemController', function($scope, $http, $routeParams) {
-     $http.get('/api/item.php?id=' + $routeParams.id).success(
+app.controller('ItemController', function($scope, $http, $routeParams, $window) {
+    $scope.pizzaItem = 0;
+    $http.get('/api/item.php?id=' + $routeParams.id).success(
             function(data, status, headers, config) {
                 $scope.pizzaItem = data;
             }).error(function (data, status, headers, config) {
@@ -24,6 +25,19 @@ app.controller('ItemController', function($scope, $http, $routeParams) {
                     error : "Hiba történt a kapcsolódás során. Próbálja újra később."
                 };
             });
+
+        $scope.prepare = function() {
+            $scope.order = {
+                pizza_id : $scope.pizzaItem.pizza_id,
+                pizza_name : $scope.pizzaItem.pizza_name,
+                quantity : $scope.quantity
+            };
+            $http.post('/api/order.php', $scope.order).success(
+                function (data, status, headers, config) {
+                    $window.location.reload();
+                }).error(function (data, status, headers, config) {
+                });
+        };
 
 });
 
@@ -36,7 +50,7 @@ app.controller('ItemsController', function($scope, $http) {
 });
 
 app.controller('OrderController', function($scope, $http) {
-    $http.get('/api/order').success(function(data, status, headers, config) {
+    $http.get('/api/order.php').success(function(data, status, headers, config) {
         $scope.pizzaOrder = data;
         }).error(function(data, status, headers, config) {
             $scope.orderError = {
@@ -85,5 +99,13 @@ app.controller('ListController', function($scope, $http, $location) {
         $scope.pizzaItems = data;
     }).error(function(data, status, headers, config) {
         $scope.itemsError = { error : "Hiba történt a kapcsolódás során. Próbálja újra később." };
+    });
+});
+
+app.controller('PriceController', function($scope, $http) {
+    $http.get('/api/summary.php').success(function(data, status, headers, config) {
+        $scope.price = data;
+    }).error(function(data, status, headers, config) {
+
     });
 });

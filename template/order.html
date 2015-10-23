@@ -2,18 +2,21 @@
 	<h1>Pizza rendelés</h1>
 	<form>
 			<fieldset>
-				<label for="customerName">Megrendelő neve:</label><input id="customerName" type="text" ng-model="pizzaCustomerName" />
-				<label for="customerPhone">Telefonszám:</label><input id="customerPhone" type="text" ng-model="pizzaCustomerPhone" />
-				<label for="customerTownCode">Irányítószám:</label><input id="customerTownCode" type="text" ng-model="pizzaCustomerTownCode" />
-				<label for="customerTown">Település:</label><input id="customerTown" type="text" ng-model="pizzaCustomerTown" />
-				<label for="customerStreet">Utca:</label><input id="customerStreet" type="text" ng-model="pizzaCustomerAddressStreet" />
-				<label for="customerHouse">Házszám</label><input id="customerHouse" type="text" ng-model="pizzaCustomerAddressHouse" />
-				<label for="customerStair">Emelet:</label><input id="customerStair" type="text" ng-model="pizzaCustomerAddressStair" />
-				<label for="customerDoor">Ajtó:</label><input id="customerDoor" type="text" ng-model="pizzaCustomerAddressDoor" />
+				<label for="customerName">Megrendelő neve:</label><input id="customerName" type="text" ng-model="customerName" />
+				<label for="customerPhone">Telefonszám:</label><input id="customerPhone" type="text" ng-model="customerPhone" />
+				<label for="customerTownCode">Irányítószám:</label><input id="customerTownCode" type="text" ng-model="customerTownCode" />
+				<label for="customerTown">Település:</label><input id="customerTown" type="text" ng-model="customerTown" />
+				<label for="customerStreet">Utca:</label><input id="customerStreet" type="text" ng-model="customerAddressStreet" />
+				<label for="customerHouse">Házszám</label><input id="customerHouse" type="text" ng-model="customerAddressHouse" />
+				<label for="customerFloor">Emelet:</label><input id="customerFloor" type="text" ng-model="customerAddressFloor" />
+				<label for="customerDoor">Ajtó:</label><input id="customerDoor" type="text" ng-model="customerAddressDoor" />
 			</fieldset>
 			<fieldset>
 				<!-- Megrendelések listája -->
-				<p>Nincs még megrendelés</p>
+				<table>
+                    <tr><th>Pizza neve</th><th>Mennyiség</th><th>Összeg</th></tr>
+                    <tr ng-repeat="order in pizzaOrder"><td>{{order.pizza_name}}</td><td>{{order.quantity}}</td><td>{{order.price_sub}}</td></tr>
+                </table>
 			<fieldset>
 				<button ng-click="sendPizzaOrder()" >Megrendelés elküldése</button>
 		</form>
