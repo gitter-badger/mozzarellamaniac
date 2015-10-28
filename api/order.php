@@ -35,9 +35,9 @@
         echo("[");
         $colon = false;
         while ($rowPizza = mysqli_fetch_assoc($resultPizza)) {
-            if ($_SESSION[$rowPizza["pizza_id"]] > 0) {
+            if ($_SESSION["id".$rowPizza["pizza_id"]] > 0) {
                 if ($colon == true) { echo(",");}
-                echo("{\"pizza_id\":".$rowPizza["pizza_id"].",\"pizza_name\":\"".$rowPizza["pizza_name"]."\",\"quantity\":".$_SESSION["id".$rowPizza["pizza_id"]].",\"price_sub\":".($_SESSION["id".$rowPizza["pizza_id"]]/$rowPizza["price"] )."}");
+                echo("{\"pizza_id\":".$rowPizza["pizza_id"].",\"pizza_name\":\"".$rowPizza["pizza_name"]."\",\"quantity\":".($_SESSION["id".$rowPizza["pizza_id"]]/$rowPizza["price"] ).",\"price_sub\":".$_SESSION["id".$rowPizza["pizza_id"]]."}");
                 $colon = true;
             }
         }
