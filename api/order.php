@@ -11,7 +11,7 @@
                 $_SESSION["summaryPrice"] -= $_SESSION["id" . $rowPrice["pizza_id"]];
             }
             if ($order["quantity"] == 0) {
-                unset
+                unset($_SESSION["id".$rowPrice["pizza_id"]]);
             }
             $_SESSION["id" . $rowPrice["pizza_id"]] = $order["quantity"] * $rowPrice["price"];
             $_SESSION["summaryPrice"] += $_SESSION["id" . $rowPrice["pizza_id"]];
