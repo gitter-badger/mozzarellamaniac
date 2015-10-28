@@ -1,0 +1,11 @@
+<div ng-controller="NewPizzaController">
+    <h1>Új pizza felvétele</h1>
+    <form>
+        <fieldset>
+            <label for="pizza_name">Név:</label><input id="pizza_name" type="text" ng-model="pizza_name" />
+            <label for="price">Ár:</label><input id="price" type="text" ng-model="price" />
+
+            <button ng-click="savePizza()">Mentés</button>
+        </fieldset>
+    </form>
+</div>

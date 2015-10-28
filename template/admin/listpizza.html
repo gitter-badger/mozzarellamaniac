@@ -1,0 +1,16 @@
+<div ng-controller="ListPizzaController">
+    <h1>Pizza szerkesztése</h1>
+    <div class="pizzaItems">
+        <form>
+        <label for="pizza_name">Név:</label><input id="pizza_name" type="text" ng-model="pizza_name"  />
+        <label for="price">Ár:</label><input id="price" type="text" ng-model="price" />
+        <label for="image">Kép:</label><input id="image" type="text" ng-model="image" />
+        <label>Látható-e?:</label><select ng-model="visible">
+            <option value="0">Rejtett</option>
+            <option value="1">Látható</option>
+        </select>
+        <button class="btn btn-warning" ng-click="modifyTopping()">Módosítás</button>
+            <button class="btn btn-danger">TÖRLÉS</button>
+        </form>
+    </div>
+</div>

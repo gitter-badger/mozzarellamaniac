@@ -9,5 +9,6 @@
             session_start();
             $_SESSION['loginname'] = $credentials["loginname"];
         }
+        $connection->close();
     }
 ?>

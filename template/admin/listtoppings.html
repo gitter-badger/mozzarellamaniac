@@ -1,0 +1,16 @@
+<div ng-controller="ListToppingsController">
+    <h1>Pizzák listája</h1>
+
+
+        <table>
+            <tr>
+                <th>Megnevezés</th>
+                <th>Lehetőség</th>
+            </tr>
+            <tr ng-repeat="topping in toppingItems">
+                <td>{{topping.topping_name}}</td>
+                <td><a href="#/listtopping/{{topping.topping_id}}">Módosítás</a></td>
+            </tr>
+        </table>
+
+</div>

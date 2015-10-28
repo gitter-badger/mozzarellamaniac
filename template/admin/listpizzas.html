@@ -1,0 +1,24 @@
+<div ng-controller="ListPizzasController">
+    <h1>Pizzák listája</h1>
+
+
+        <table>
+            <tr>
+                <th>Megnevezés</th>
+                <th>Ár (Ft)</th>
+                <th>Összetevők</th>
+                <th>Kép</th>
+                <th>Látható-e?</th>
+                <th>Lehetőség</th>
+            </tr>
+            <tr ng-repeat="pizza in pizzaItems">
+                <td>{{pizza.pizza_name}}</td>
+                <td>{{pizza.price}}</td>
+                <td><ul ng-repeat="topping in pizza.topping_sub"><li>{{topping.topping_name}}</li></ul></td>
+                <td>{{pizza.image}}</td>
+                <td><span ng-if="pizza.visible == 0">Rejtett</span><span ng-if="pizza.visible == 1">Látható</span></td>
+                <td><a href="#/listpizza/{{pizza.pizza_id}}">Módosítás</a></td>
+            </tr>
+        </table>
+
+</div>
