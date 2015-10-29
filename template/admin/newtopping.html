@@ -1,0 +1,9 @@
+<div ng-controller="NewToppingController">
+    <h1>Új feltét felvétele</h1>
+    <form>
+        <fieldset>
+            <label for="newTopping">Feltét:</label><input type="text" id="newTopping" ng-model="topping_name" />
+            <button class="btn btn-primary" ng-click="saveTopping()">Mentés</button>
+        </fieldset>
+    </form>
+</div>

@@ -1,6 +1,36 @@
 body {
     font-family: arial;
 }
+table {
+    border-collapse: collapse;
+    margin: 24px 24px;
+    width: 100%;
+
+}
+table {
+    color: white;
+    font-weight: bold;
+}
+tr {
+    height: 50px;
+}
+tr:nth-child(odd) {
+    background-color: cornflowerblue;
+    border-bottom: 2px solid white;
+}
+tr:nth-child(even) {
+    background-color: lightblue;
+    color: black;
+    border-bottom: 2px solid white;
+}
+td, th {
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+td a {
+    color: black;
+}
 nav {
     margin: 24px auto;
     text-align: center;
@@ -28,6 +58,7 @@ h1 {
     width: 1080px;
     margin: 24px auto 24px auto;
 }
+
 form {
     width: 1080px;
 }
@@ -43,11 +74,15 @@ input {
     display: inline-block;
     margin-top: 24px;
 }
+.pizzaItems {
+    width: 980px;
+    margin: 24px auto;
+}
 .pizzaItems h3, .pizzaItems h2, .pizzaItems a {
     display: inline-block;
     float: left;
     width: 720px;
 }
 .pizzaItems img {
-    width: 360px;
+    height: 180px;
 }

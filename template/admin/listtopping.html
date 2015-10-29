@@ -1,0 +1,10 @@
+<div ng-controller="ListToppingController">
+    <h1>Pizza szerkesztése</h1>
+    <div class="pizzaItems">
+        <form>
+        <label for="topping_name">Név:</label><input id="topping_name" type="text" ng-model="topping_name"  />
+        <button class="btn btn-warning" ng-click="modifyTopping()">Módosítás</button>
+            <button class="btn btn-danger">TÖRLÉS</button>
+        </form>
+    </div>
+</div>
