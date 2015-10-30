@@ -3,7 +3,7 @@
     if (isset($_SESSION['loginname']) && $_SERVER["REQUEST_METHOD"] == "GET") {
         header("Content-type: application/json");
         $connection = mysqli_connect("localhost", "root", "root", "pizzeria");
-
+        mysqli_set_charset("utf8");
         $sqlPizza = "SELECT pizza_id, pizza_name, price, image, visible FROM pizza";
         $rowsPizza = array();
         $resultPizza = $connection->query($sqlPizza);

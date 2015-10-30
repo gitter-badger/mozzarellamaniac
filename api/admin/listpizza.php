@@ -8,6 +8,7 @@
         else {
             header("Content-type: application/json");
             $connection = mysqli_connect("localhost", "root", "root", "pizzeria");
+            mysqli_set_charset("utf8");
             $sqlPizza = "SELECT pizza_id, pizza_name, price, image, visible FROM pizza WHERE pizza.pizza_id=" . $id;
             $resultPizza = $connection->query($sqlPizza);
             $rowPizza = mysqli_fetch_assoc($resultPizza);

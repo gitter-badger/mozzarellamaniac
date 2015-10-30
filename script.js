@@ -1,9 +1,11 @@
 var app = angular.module('MozzarellaManiac', [ 'ngRoute' ]);
 app.config(function($routeProvider) {
     $routeProvider.when('/', {
-        templateUrl : '/template/items.html',
-    }).when('/item/:id', {
-        templateUrl: '/template/item.html',
+        templateUrl : '/template/pizzas.html',
+    }).when('/pizzas', {
+        templateUrl: '/template/pizzas.html',
+    }).when('/pizza/:id', {
+        templateUrl: '/template/pizza.html',
     }).when('/order', {
         templateUrl: '/template/order.html',
     }).when('/login', {

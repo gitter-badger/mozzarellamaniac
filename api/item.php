@@ -4,7 +4,7 @@ if (!$id) {
 
 }
 else {
-    header("Content-type: application/json");
+    header("Content-type: application/json; charset=utf-8");
     $connection = mysqli_connect("localhost", "root", "root", "pizzeria");
     $sqlPizza = "SELECT pizza_id, pizza_name, price, image FROM pizza WHERE pizza.pizza_id=" . $id . " AND visible=1";
     $resultPizza = $connection->query($sqlPizza);
